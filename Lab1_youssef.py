@@ -8,8 +8,6 @@ x_train = np.array([1.0, 2.0])
 y_train = np.array([300.0, 500.0])
 print(f"x_train = {x_train}")
 print(f"y_train = {y_train}")
-
-
 # m is the number of training examples
 print(f"x_train.shape: {x_train.shape}")
 m = x_train.shape[0]
@@ -79,7 +77,7 @@ x_i = 1.2
 cost_1200sqft = w * x_i + b  
 plt.scatter(x_i, cost_1200sqft, marker='o', c='r',label='House price prediction')
 plt.legend()
-print(f"${cost_1200sqft:.0f} thousand dollars")
+print(f"Cost of the house {x_i*1000} sqft is ${cost_1200sqft:.0f} thousand dollars")
 
 plt.show()
 
